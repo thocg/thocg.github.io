@@ -1,0 +1,35 @@
+# ─── Build tooling (kept out of the public repo on request) ──────────
+# The local Python script that generates the *-data.js files.
+build_glossary.py
+
+# ─── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ─── Editors / IDEs ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── OS junk ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Optional: raw source text ───────────────────────────────────────
+# The website only needs the generated *-data.js files, so you may keep
+# the raw sources local. Uncomment to stop uploading them.
+# th_data.txt
+# eng_data.txt
+# CHANGELOG.md
+
+# ─── Do NOT ignore the files the website actually loads ───────────────
+# index.html, glossary-data.js and changelog-data.js MUST be uploaded
+# (the page reads them directly — required for GitHub Pages).
+# glossary.json is only used for tooling/HTTP; uncomment to skip it.
+# glossary.json

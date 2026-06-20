@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thai Open Cyber Glossary (TOCG)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --bg:#f7f8fa;
+    --panel:#ffffff;
+    --fg:#1f2733;
+    --muted:#697586;
+    --faint:#8b97a7;
+    --line:#e4e8ee;
+    --line-strong:#d3d9e2;
+    --accent:#1f5fa8;
+    --accent-soft:#eaf2fb;
+    --hi:#fde68a;
+    --radius:10px;
+  }
+  html[data-theme="dark"] {
+    --bg:#0f141b;
+    --panel:#161d27;
+    --fg:#e4e9f0;
+    --muted:#9aa6b6;
+    --faint:#6b7686;
+    --line:#252e3a;
+    --line-strong:#33404f;
+    --accent:#5ea0e8;
+    --accent-soft:#1b2a3d;
+    --hi:#7a5d00;
+  }
+  html[data-theme="dark"] .term-en { color:var(--fg); }
+  html[data-theme="dark"] .def, html[data-theme="dark"] .about-card p { color:#c4cdd9; }
+  html[data-theme="dark"] mark { color:#fff5cf; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin:0;
+    font-family: "Segoe UI", "Sarabun", "Leelawadee UI", Tahoma, system-ui, sans-serif;
+    color:var(--fg); background:var(--bg);
+    line-height:1.6; font-size:16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Header */
+  header {
+    position:sticky; top:0; z-index:20;
+    background:var(--panel); border-bottom:1px solid var(--line);
+  }
+  .head-inner { max-width:1100px; margin:0 auto; padding:18px 24px 14px; }
+  .brand { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+  .brand-text { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+  h1 { font-size:1.25rem; font-weight:700; margin:0; letter-spacing:-.01em; }
+  .brand .sub { color:var(--muted); font-size:.85rem; }
+  .head-actions { flex:none; display:flex; align-items:center; gap:8px; }
+  .topnav { display:flex; gap:4px; }
+  .topnav a {
+    font-size:.85rem; font-weight:600; text-decoration:none; color:var(--muted);
+    padding:8px 12px; border-radius:var(--radius); border:1px solid transparent;
+    transition:color .15s, background .15s, border-color .15s;
+  }
+  .topnav a:hover { color:var(--accent); background:var(--accent-soft); }
+  .topnav a.active { color:var(--accent); background:var(--accent-soft); border-color:var(--line-strong); }
+  #theme-toggle {
+    flex:none; display:inline-flex; align-items:center; justify-content:center;
+    width:38px; height:38px; padding:0; cursor:pointer;
+    color:var(--muted); background:var(--panel);
+    border:1px solid var(--line-strong); border-radius:var(--radius);
+    transition:color .15s, border-color .15s, background .15s;
+  }
+  #theme-toggle:hover { color:var(--accent); border-color:var(--accent); background:var(--accent-soft); }
+  #theme-toggle .moon { display:none; }
+  html[data-theme="dark"] #theme-toggle .sun { display:none; }
+  html[data-theme="dark"] #theme-toggle .moon { display:block; }
+  .search-row { display:flex; align-items:center; gap:12px; margin-top:12px; }
+  .search-wrap { position:relative; flex:1; }
+  .search-wrap svg { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--faint); }
+  #search {
+    width:100%; padding:11px 14px 11px 38px; font-size:.98rem; color:var(--fg);
+    border:1px solid var(--line-strong); border-radius:var(--radius); background:var(--panel);
+    outline:none; transition:border-color .15s, box-shadow .15s;
+  }
+  #search:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); }
+  #stats { color:var(--muted); font-size:.82rem; white-space:nowrap; }
+
+  /* Layout */
+  .wrap { max-width:1100px; margin:0 auto; padding:24px; display:grid;
+          grid-template-columns:64px 1fr; gap:28px; align-items:start; }
+
+  /* A-Z rail */
+  nav#nav { position:sticky; top:122px; display:flex; flex-direction:column; gap:2px; }
+  nav#nav a {
+    text-align:center; font-size:.8rem; font-weight:600; text-decoration:none;
+    color:var(--muted); padding:5px 0; border-radius:6px;
+  }
+  nav#nav a:hover { background:var(--accent-soft); color:var(--accent); }
+
+  /* List */
+  main { min-width:0; }
+  .sec {
+    font-size:.85rem; font-weight:700; letter-spacing:.08em; color:var(--accent);
+    text-transform:uppercase; margin:0 0 4px; padding:18px 0 6px;
+    border-bottom:1px solid var(--line); scroll-margin-top:130px;
+  }
+  .sec:first-child { padding-top:0; }
+  .entry {
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:14px 16px; margin:10px 0;
+  }
+  .term { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; }
+  .term-en { font-weight:600; font-size:1.02rem; color:var(--fg); }
+  .term-th { color:var(--accent); font-size:.98rem; }
+  .def { margin:8px 0 0; color:#2c3543; }
+  .def p { margin:0 0 8px; }
+  .def p:last-child { margin-bottom:0; }
+  mark { background:var(--hi); color:inherit; padding:0 1px; border-radius:2px; }
+
+  #empty { color:var(--muted); padding:40px 0; text-align:center; }
+
+  /* About page */
+  #view-about { display:none; max-width:1100px; margin:0 auto; padding:24px; }
+  .about-card {
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 20px;
+  }
+  .about-card h2 { font-size:1rem; margin:0 0 8px; }
+  .about-card p { margin:0 0 8px; font-size:.9rem; color:#2c3543; }
+  .about-card p:last-child { margin-bottom:0; }
+  .about-card a { color:var(--accent); }
+  .lic { display:inline-flex; align-items:center; gap:6px; font-weight:600; }
+
+  /* Changelog page (JetBrains Mono) */
+  #view-changelog { display:none; max-width:900px; margin:0 auto; padding:24px; }
+  .cl-card {
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 24px;
+    font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size:.85rem; line-height:1.7; color:#2c3543;
+  }
+  html[data-theme="dark"] .cl-card { color:#c4cdd9; }
+  .cl-title { font-size:1.05rem; font-weight:700; color:var(--fg); }
+  .cl-ver {
+    font-weight:700; color:var(--accent); margin-top:18px; padding-top:14px;
+    border-top:1px solid var(--line);
+  }
+  .cl-item { padding-left:20px; text-indent:-14px; }
+  .cl-gap { height:10px; }
+
+  footer { max-width:1100px; margin:0 auto; padding:14px 24px 32px; color:var(--faint); font-size:.78rem; }
+
+  @media (max-width:640px) {
+    .wrap { grid-template-columns:1fr; gap:16px; padding:16px; }
+    nav#nav { position:static; flex-flow:row wrap; gap:4px; }
+    nav#nav a { border:1px solid var(--line); min-width:30px; }
+    .search-row { flex-wrap:wrap; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="head-inner">
+    <div class="brand">
+      <div class="brand-text">
+        <h1>Thai Open Cyber Glossary</h1>
+        <span class="sub">อภิธานศัพท์ความมั่นคงปลอดภัยทางไซเบอร์ ไทย–อังกฤษ</span>
+      </div>
+      <div class="head-actions">
+        <nav class="topnav" aria-label="Pages">
+          <a href="#/" data-view="glossary">อภิธานศัพท์</a>
+          <a href="#/changelog" data-view="changelog">Changelog</a>
+          <a href="#/about" data-view="about">เกี่ยวกับ</a>
+        </nav>
+        <button id="theme-toggle" type="button" title="สลับโหมดมืด / สว่าง" aria-label="Toggle dark mode">
+          <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div class="search-row" id="search-row">
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input id="search" type="search" placeholder="ค้นหาคำศัพท์หรือคำอธิบาย…  Search term or definition" autocomplete="off">
+      </div>
+      <span id="stats"></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" id="view-glossary">
+  <nav id="nav" aria-label="A to Z"></nav>
+  <main id="list"></main>
+</div>
+<section id="view-about">
+  <div class="about-card">
+    <h2>เกี่ยวกับโครงการนี้ · About</h2>
+    <p>
+      Thai Open Cyber Glossary (TOCG) เป็นอภิธานศัพท์ความมั่นคงปลอดภัยทางไซเบอร์
+      ฉบับภาษาไทย–อังกฤษแบบเปิด เพื่อการศึกษาและใช้งานอ้างอิงได้อย่างเสรี
+      <span lang="en">— a bilingual (Thai–English) open glossary of cyber security terms.</span>
+    </p>
+    <p>
+      <strong>สัญญาอนุญาต · License:</strong>
+      เผยแพร่ภายใต้
+      <a class="lic" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+        Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</a>.
+      คุณสามารถแบ่งปันและดัดแปลงได้ โดยต้องให้เครดิตและเผยแพร่ต่อภายใต้สัญญาอนุญาตเดียวกัน
+    </p>
+    <p>
+      <strong>แหล่งอ้างอิง · Source:</strong>
+      ดัดแปลงและแปลจากบทความ
+      “<a href="https://cyberone.security/blog/cyber-security-glossary-of-terms-the-ultimate-list" target="_blank" rel="noopener">Cyber Security Glossary of Terms: The Ultimate List</a>”
+      โดย <strong>Mark Terry</strong>, Head of Marketing, CyberOne.
+    </p>
+    <p style="margin-top:14px"><a href="#/">&larr; กลับไปที่อภิธานศัพท์ · Back to glossary</a></p>
+  </div>
+</section>
+<section id="view-changelog">
+  <div class="cl-card" id="changelog-body"></div>
+</section>
+<footer id="foot"></footer>
+
+<script>
+// Apply saved/system theme as early as possible to avoid a flash.
+(function () {
+  const saved = localStorage.getItem('tocg-theme');
+  const dark = saved ? saved === 'dark'
+    : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+})();
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const root = document.documentElement;
+  const dark = root.getAttribute('data-theme') === 'dark';
+  if (dark) { root.removeAttribute('data-theme'); localStorage.setItem('tocg-theme', 'light'); }
+  else { root.setAttribute('data-theme', 'dark'); localStorage.setItem('tocg-theme', 'dark'); }
+});
+
+// Simple hash-based page switching (single file, no server).
+function route() {
+  const page = location.hash.replace(/^#\/?/, '');
+  const view = (page === 'about' || page === 'changelog') ? page : 'glossary';
+  document.getElementById('view-glossary').style.display = view === 'glossary' ? '' : 'none';
+  document.getElementById('search-row').style.display = view === 'glossary' ? '' : 'none';
+  document.getElementById('view-about').style.display = view === 'about' ? 'block' : 'none';
+  document.getElementById('view-changelog').style.display = view === 'changelog' ? 'block' : 'none';
+  document.querySelectorAll('.topnav a').forEach(a =>
+    a.classList.toggle('active', a.dataset.view === view));
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+route();
+</script>
+
+<script src="glossary-data.js"></script>
+<script src="changelog-data.js"></script>
+<script>
+const list = document.getElementById('list');
+const stats = document.getElementById('stats');
+const nav = document.getElementById('nav');
+const search = document.getElementById('search');
+const foot = document.getElementById('foot');
+let entries = [];
+
+if (window.GLOSSARY && window.GLOSSARY.entries) {
+  entries = window.GLOSSARY.entries;
+  foot.textContent = `${entries.length} terms · updated ${window.GLOSSARY.generated || ''}`;
+  buildNav();
+  render('');
+} else {
+  list.innerHTML = '<p id="empty">โหลดข้อมูลไม่ได้ — ไม่พบ glossary-data.js ' +
+    '(รัน <code>python build_glossary.py</code> ก่อน)</p>';
+}
+
+function buildNav() {
+  const letters = [...new Set(entries.map(e => e.letter))].sort();
+  nav.innerHTML = letters.map(l => `<a href="#L${l}">${l}</a>`).join('');
+}
+
+function esc(s) { return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+function hi(s, q) {
+  s = esc(s);
+  if (!q) return s;
+  const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return s.replace(re, '<mark>$1</mark>');
+}
+
+function render(q) {
+  q = q.trim().toLowerCase();
+  const matches = q
+    ? entries.filter(e =>
+        (e.term_en + ' ' + e.term_th + ' ' + e.definition.join(' ')).toLowerCase().includes(q))
+    : entries;
+
+  stats.textContent = q ? `${matches.length} / ${entries.length} รายการ` : `${entries.length} รายการ`;
+
+  if (!matches.length) { list.innerHTML = '<p id="empty">ไม่พบรายการที่ตรงกัน</p>'; return; }
+
+  let html = '', letter = null;
+  for (const e of matches) {
+    if (!q && e.letter !== letter) {
+      letter = e.letter;
+      html += `<h2 class="sec" id="L${letter}">${letter}</h2>`;
+    }
+    html += `<article class="entry">
+      <div class="term"><span class="term-en">${hi(e.term_en, q)}</span>` +
+      (e.term_th ? `<span class="term-th">${hi(e.term_th, q)}</span>` : ``) +
+      `</div>
+      <div class="def">${e.definition.map(p => `<p>${hi(p, q)}</p>`).join('')}</div>
+    </article>`;
+  }
+  list.innerHTML = html;
+}
+
+let t;
+search.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => render(search.value), 120); });
+
+// Render the changelog (read directly from changelog-data.js).
+function renderChangelog() {
+  const el = document.getElementById('changelog-body');
+  const text = (window.CHANGELOG || '').replace(/\s+$/, '');
+  if (!text) {
+    el.textContent = 'โหลด changelog ไม่ได้ — ไม่พบ changelog-data.js (รัน python build_glossary.py ก่อน)';
+    return;
+  }
+  el.innerHTML = text.split('\n').map(line => {
+    if (/^##\s+/.test(line)) return `<div class="cl-ver">${esc(line.replace(/^##\s+/, ''))}</div>`;
+    if (/^#\s+/.test(line))  return `<div class="cl-title">${esc(line.replace(/^#\s+/, ''))}</div>`;
+    if (/^\s*-\s+/.test(line)) return `<div class="cl-item">• ${esc(line.replace(/^\s*-\s+/, ''))}</div>`;
+    if (line.trim() === '') return `<div class="cl-gap"></div>`;
+    return `<div>${esc(line)}</div>`;
+  }).join('');
+}
+renderChangelog();
+</script>
+</body>
+</html>

@@ -1,0 +1,617 @@
+A
+Advanced Persistent Threat (APT) 
+A cyber attack that uses sophisticated techniques to conduct cyber espionage or other malicious activity on an ongoing basis against targets such as governments and companies. It is typically performed by an adversary with sophisticated expertise and significant resources, frequently associated with nation-state players.
+
+These attacks come from multiple entry points and may use several vectors such as cyber, physical and deception. Ending the attack once a system is under attack can be very difficult.
+
+AI-Augmented Security
+The use of artificial intelligence to help detect, prioritise and investigate threats faster. In practice, AI helps reduce alert noise, enrich incidents with context and support faster decision-making, while human analysts remain accountable for the final response. 
+
+Allowlist
+A list of entities considered trustworthy and granted access or privileges.
+
+Antivirus
+Antivirus software monitors a computer or network and detects cyber security threats,  such as malicious code and malware. In addition to alerting you to a danger, antivirus programs may remove or neutralise malicious code.
+
+Attack Signature
+A characteristic or distinctiveness that can help link one attack to another,  identifying possible actors and solutions.
+
+Attack Surface 
+The total number of possible entry points an attacker could use to access systems, data or identities. This can include endpoints, cloud services, email, applications, user accounts and third-party connections. 
+
+Attacker
+The agent behind the threat is a malicious actor who seeks to change,  destroy,  steal or turn off the information held on computer systems and then exploits the outcome.
+
+Authentication
+Verifying a user’s identity or other attributes,  process, or device.
+
+ 
+
+B
+Behaviour Monitoring
+Observing users’ activities, information systems and processes can be used to measure these activities against organisational policies and rules, lines of normal activity,  thresholds and an organisational blocklist.
+
+Blocklist
+A list of entities (users,  devices) that are either blocked, denied privileges or access.
+
+Blue Team
+The defence group in a mock cyber security attack. The Blue Team defends the enterprise’s information systems while the Red Team attacks. These mock attacks typically occur as part of an operational exercise established and monitored by a neutral group,  the White Team.
+
+Bot
+A computer connected to the Internet has been compromised with malicious logic to undertake activities under the command and control of a remote administrator.
+
+Botnet
+A network of infected devices,  connected to the Internet, can commit coordinated cyber attacks without their owners’ knowledge.
+
+Breach
+The unauthorised access of data,  computer systems or networks.
+
+Bring Your Device (BYOD)
+A strategy or policy whereby an organisation permits employees to use their devices for work purposes to access.
+
+An attack in which computational power is used to automatically enter a vast quantity of number combinations to discover passwords and gain access.
+
+Bug
+A relatively minor defect or flaw in an information system or device.
+
+ 
+
+C
+Certificate
+A digital certificate is a form of digital identity verification that allows a computer,  user, or organisation to exchange information securely.
+
+Certified Information Systems Organisation (ISAA)
+A certification for professionals who monitor,  audit,  control and assess information systems.
+
+Certified Information Systems Security Manager (CISM)
+An advanced certification from ISACA for professionals with the knowledge and experience to develop and manage an enterprise information security program.
+
+Certified Information Systems Security Professional (CISSP)
+A management certification for CISOs and other information security leaders.
+
+Cipher
+An algorithm for encrypting and decrypting data. Sometimes used interchangeably with the word ‘code’.
+
+Cloud-Native Application Protection Platform (CNAPP) 
+A cloud security approach that helps protect cloud workloads, applications and configurations in modern cloud environments. It is designed to improve visibility, reduce misconfigurations and strengthen compliance.
+
+Compliance Manager 
+A Microsoft tool within Microsoft Purview that helps organisations assess, track and improve compliance activities against regulations and standards.  
+
+Computer Incident Response Team (CIRT)
+A team of investigators focused on network security breaches. Their role is to analyse how the incident occurred and how the information has been affected, provide advice and respond.
+
+Computer Network Defence (CND)
+Typically applied to military and government security, CND refers to measures taken to protect information systems and networks against cyberattacks and intrusions.
+
+Control Objectives for Information and Related Technologies (COBIT)
+A business framework developed and continually updated by ISACA comprises practices,  tools and models for the management and governance of information technology,  including risk management and compliance.
+
+Conditional Access 
+A Microsoft Entra capability that controls access to applications and data based on conditions such as user identity, device health, location or risk level.
+
+Copilot Readiness 
+The process of making sure an organisation’s data, security, governance and licensing are properly prepared before deploying Microsoft 365 Copilot.  
+
+Credentials
+The information used to authenticate a user’s identity, such as password,  token, a nd certificate.
+
+Cross-Site Scripting (XSS)
+Cross-site scripting (XSS) is a software vulnerability usually found in Web applications that allows online criminals to inject client-side script into pages other users view.
+
+Attackers can use the cross-site scripting vulnerability simultaneously to overwrite access controls. This issue can become a significant security risk unless the network administrator or the website owner takes the necessary security measures.
+
+Cryptography
+The study of encoding. Also,  code/cipher/mathematical techniques to secure data and provide authentication of entities and data.
+
+Cyber Attack
+Deliberate and malicious attempts to damage, disrupt or gain access to computer systems,  networks or devices, via cyber means.
+
+Cyber Essentials
+A UK Government-backed self-assessment certification that helps you protect against cyber attacks while also demonstrating to others that your organisation is taking measures against cybercrime.
+
+Cyber Incident
+A breach of an organisation’s security policy – most commonly;
+
+Attempts to gain unauthorised access/to data.
+UnautUnauthorUnauthorised use ofutunauthorunauthorised usef dastoragenge unautunauthorisedware,  software or hardware without the system owner’s consent.
+Malicious disruption and/or denial of service.
+Cyber Security
+Cyber security is a collective term for protecting electronic and computer networks,  programs and data against malicious attacks and unauthorised access.
+
+Data in persistent storage—unauthorised files on a device, whether or not it is connected to a power source, such as hard disks, removable media or backups.
+
+D
+Data Breach
+ The unauthorised disclosure of information, usually to a party outside the authorised organisation. 
+
+Data Governance 
+The policies, controls and processes used to manage data properly across its lifecycle. This includes classification, access, protection, retention and compliance.
+
+Data Lifecycle and Retention 
+The process of managing data from creation to deletion, including how long it is kept, where it is stored and when it should be archived or removed. 
+
+Data Loss
+No longer having been deleted or forgotten.
+
+Data Loss Prevention (DLP)
+A security strategy and related programs to prevent sensitive data from passing a secure boundary.
+
+Data Security
+The measures taken to protect confidential data and prevent it from being accidentally or deliberately disclosed,  compromised, corrupted or destroyed.
+
+Decryption
+The process of deciphering coded text into its original plain form.
+
+Detection-as-Code 
+A structured approach to creating and maintaining threat detection rules in a controlled, repeatable way, similar to software development. 
+
+Denial of Service (DoS)
+This type of cyber attack prevents authorised access to system services or resources, or impairs accessibility by overloading the service with requests.
+
+Dictionary Attack
+A brute force attack is when the attacker uses known dictionary words,  phrases or common passwords to access your information system.
+
+Distributed Denial of Service (DDoS)
+A denial of service technique where multiple systems are used to perform the attack,  overwhelming the service.
+
+Download Attack
+Malicious software or a virus installed on a device without the user’s knowledge or consent is sometimes called a drive-by download.
+
+ 
+
+E
+Electronic Warfare (EW)
+Using energy, such as radio waves or lasers,  disrupts or turns the enemy’s electronics off. An example would be frequency jamming to disable communication equipment.
+
+Encode
+The use of a code to convert plain text to ciphertext.
+
+Encryption
+Using a cipher to protect information makes it unreadable to anyone who doesn’t have the key to decode it.
+
+Endpoint
+A collective term for internet-capable computer devices connected to a network – for example, modern smartphones,  laptops and tablets are all endpoints.
+
+Entra Governance 
+Microsoft Entra capabilities that help organisations manage identity lifecycle, access approvals, privileged access and entitlement controls. 
+
+Ethical Hacking
+Hacking techniques are used for legitimate purposes,  such as identifying and testing cyber security vulnerabilities. In this instance,  the actors are sometimes referred to as ‘white hat hackers’.
+
+Exfiltration
+The transfer of information from a system without consent.
+
+Exploit: Taking advantage of a vulnerability in an information system is also used to describe a technique for breaching network security.
+Exploit Kit
+Computer programs are designed to discover vulnerabilities in software apps and use them to gain access to a system or network. Once they have infiltrated,  they will feed it with harmful code.
+
+Exposure Management 
+The ongoing process of identifying, prioritising and reducing weaknesses that could be exploited by attackers across identities, devices, apps, cloud services and data.  
+
+ 
+
+F
+Firewall
+A virtual boundary surrounding a network or device protects it from unwanted access. Can be hardware or software.
+
+ 
+
+G
+GCHQ
+Government Communications Headquarters gathers foreign intelligence to help combat terrorism,  cybercrime,  pornography and the Data Protection Regulations. European legislation is designed to prevent data misuse by giving individuals greater control over how their personal information is used online.
+
+Governance,  Risk Management and Compliance (GRC)
+Three aspects of organisational management include effective measures to mitigate risks and comply with internal policies and external regulations. A joined-up approach to managing security policies, business risk and regulatory obligations. It helps organisations stay in control, reduce risk and demonstrate compliance.  
+
+Guardrails 
+Pre-agreed limits and rules that define what automated tools, AI systems or playbooks are allowed to do safely without causing disruption or overreach.  
+
+ 
+
+H
+Hacker
+Someone who breaks into computers,  systems and networks.
+
+Hashing
+Using a mathematical algorithm to disguise a piece of data.
+
+Honeypot (honeynet)
+A decoy system or network that serves to attract potential attackers, protecting actual systems by detecting attacks or deflecting them. A good tool for learning about attack styles. Multiple honeypots form a honeynet.
+
+ 
+
+I
+Incident
+Any breach of the security rules for a system or service. This includes attempts to gain unauthorised access or use of the processing or unauthorised changes to a system’s firmware,  software or hardware without the owner’s consent.
+
+Incident Response Plan
+A predetermined plan of action to be undertaken in the event of a cyber incident.
+
+Indicator
+A signal that a cyber incident may have occurred or is in progress.
+
+Indicators of Compromise (IoCs)
+ Pieces of evidence that suggest a system or account may have been breached, such as known malicious IP addresses, file hashes, domains or unusual behaviours. 
+
+Industrial Control System (ICS)
+An information system used to control industrial processes or infrastructure assets is commonly found in the manufacturing, product handling,  production and distribution industries.
+
+Information Security Policy
+The directives,  regulations,  rules and practices form an organisation’s strategy,  protecting and distributing information.
+
+Identity and Access Management (IAM) 
+The policies, technologies and controls used to ensure the right people have the right access to the right systems at the right time.
+
+Identity Protection 
+Security measures designed to detect and stop attacks against user identities, such as account takeover, credential theft or suspicious sign-in activity.  
+
+Insider Risk 
+The risk that a trusted user, intentionally or accidentally, exposes sensitive data, breaks policy or creates security issues from inside the organisation.
+
+The Organization for Standardization (ISO)
+
+An independent body that develops voluntary industry standards, including two major information security management standards: ISO 27001 and ISO 27002.
+
+Internet of Thingss (IoT)
+The ability of everyday objects, such as kettles, fridges and televisions, to connect to the 
+
+Internet Detection System/Intrusion Detection and Prevention (IDS/IDP)
+Hardware or software that finds and helps prevent malicious activity on corporate networks.
+
+IP Spoofing
+A tactic used by attackers to supply a false IP address to trick the user or a cyber security solution into believing it is a legitimate actor.
+
+ISO 27001
+The gold standard in information security management systems (ISMS), demonstrating the highest level of accreditation.
+
+ 
+
+J
+Jailbreak
+The device’s security restriction turns off unofficial apps and modifies the system. This is typically applied to a mobile phone.
+ 
+
+K
+Key
+The numerical value used to encrypt and decrypt the ciphertext.
+
+Keylogger
+A type of software or hardware that tracks keystrokes and keyboard events to monitor user activity.
+
+ 
+
+L
+Logic Bomb
+A piece of code that carries a set of secret instructions. It is inserted in a system and triggered by a particular action. The code typically performs a malicious action, such as deleting files.
+
+ 
+
+M
+Macro Virus
+A type of malicious code that uses the macro programming capabilities of a document’s application to carry out misdeeds, replicate itself and spread throughout a system.
+
+Malicious Code
+The program code is designed for evil and intended to harm an information system’s confidentiality,  Integrity or availability.
+
+Malvertising
+The use of online advertising to deliver malware.
+
+Malware
+Short for malicious software, which includes viruses,  Trojans,  worms, code or content that could adversely impact organisations or individuals.
+
+Managed Detection and Response (MDR) 
+A managed security service focused mainly on detecting and responding to threats on endpoints. It is effective for device-level threats but may have more limited coverage across identity, SaaS and cloud.
+
+Managed eXtended Detection and Response (MXDR) 
+A managed security service that brings together signals from endpoints, identity, cloud, SaaS, email and network sources, then uses automation and human analysts to detect, investigate and respond to threats. It is broader than MDR and designed for end-to-end outcomes. 
+
+Man-in-the-Middle Attack (MitM)
+
+Cybercriminal organisations target the website the victim is trying to reach to harvest or alter the information being transmitted. Sometimes, this is abbreviated as MITM, MIM, Mi, M, or MITMA.
+
+Mean Time to Contain (MTTC) 
+A measurement of how long it takes to contain a security incident once it has been identified.
+
+Mean Time to Detect (MTTD) 
+A measurement of how quickly a security team or service identifies a threat or incident.
+
+Mean Time to Respond (MTTR) 
+A measurement of how long it takes to respond to and begin resolving a security incident after detection.
+
+Microsoft Defender for Cloud 
+Microsoft’s cloud security platform for monitoring cloud workloads, improving posture and supporting compliance across cloud environments.
+
+Microsoft Defender for Endpoint 
+Microsoft’s endpoint security platform that helps prevent, detect, investigate and respond to threats on devices.
+
+Microsoft Defender for Identity 
+A Microsoft security tool focused on detecting threats against on-premises and hybrid identity environments, especially Active Directory.
+
+Microsoft Defender XDR 
+Microsoft’s extended detection and response platform that brings together signals across endpoints, identities, email, applications and cloud services.
+
+Microsoft Entra 
+Microsoft’s identity and access product family, used to secure identities, manage access and support Zero Trust security.
+
+Microsoft Intune 
+Microsoft’s endpoint management platform used to manage devices, enforce compliance policies and secure corporate data across desktops, laptops and mobile devices.
+
+Microsoft Purview 
+Microsoft’s data security, governance and compliance platform used for classification, protection, retention, insider risk and compliance management.
+
+Microsoft Sentinel 
+Microsoft’s cloud-native security information and event management and security orchestration platform. It helps collect, correlate and analyse security data, then automate response through playbooks.
+
+Modern SecOps 
+A modern security operations approach that combines people, process and technology to improve detection, investigation and response across a changing threat landscape.
+
+Mitigation
+The steps taken to minimise risks.
+
+Mobile Device Management (MDM)
+Minimisevice management (MDM), specifically security software for managing and securing enterprise devices, allows for the administration and management of the device.
+
+ 
+
+N
+National Cyber Security Centre (NCSC)
+Part of GCHQ. A UK government organisation protects critical services from cyber attacks.
+
+National Institute of Standards and Technology (NIST)
+A federal agency responsible for the ‘Framework for Improving Critical Infrastructure cyber security’—voluntary guidelines organisations use to manage risks.
+
+NIST Cyber Security Standards
+Organisations and businesses prepare their defences against cybercrime.
+ 
+
+P
+Packet Sniffer
+Software designed to monitor and record network traffic can be used for good or evil—it can run diagnostics and troubleshoot problems or snoop in on private data exchanges,  such as browsing history,  downloads,  etc.
+
+Passive Attack
+Attackers try to gain access to confidential information to extract it. Because they’re not trying to change the data,  this type of attack is more difficult to detect—hence the name ‘passive’.
+
+Password Sniffing
+A technique to harvest passwords is monitoring or snooping on network traffic to retrieve password data.
+
+Patch Management
+Developers provide patches (updates)Developers provide patches (updates) to fix flaws in software. Patch management is getting,  testing and installing software patches for a network and its systems.
+
+Patching
+Applying updates (patches) to firmware or software,  whether to improve security or enhance performance.
+
+Payload
+The element of malware that performs malicious actions is the cyber security equivalent of the explosive charge of a missile. It is usually spoken of in terms of the damage wreaked.
+
+Payment Card Industry Data Security Standard (PCI-DSS)
+The security practices of the global payment card industry. Retailers and service providers accepting card payments (debit and credit) must comply with PCI-DSS.
+
+Penetration Test/ Pen Test
+A slang term for a penetration test or Penetration Testing.Penetration Testing
+
+A test designed to explore and expose security weaknesses in an information system so that they can be fixed.
+
+Personally Identifiable Information (PII)
+The data that enables an individual to be identified.
+
+Pharming
+An attack on network infrastructure in which a user is redirected to an illegitimate website despite entering the right address.
+
+Phishing
+Mass emails asking for sensitive information or pushing them to visit a fake website. These emails are generally untargeted.
+
+Playbook 
+A predefined set of automated or manual response steps used to handle a type of security incident consistently and quickly.
+
+Posture Management 
+The process of assessing and improving how well an organisation’s security controls are configured and maintained over time.
+
+Privileged Identity Management (PIM) 
+A Microsoft Entra capability that helps control, monitor and limit access to powerful admin accounts and privileged roles.
+
+Proxy Server
+A firewall is a device that acts as a barrier between a computer and the Internet, enhancing cyber security by preventing attackers from accessing a computer or private network directly.
+
+ 
+
+R
+Ransomware
+Ransomware is malware (malicious software) that encrypts all the data on a PC or mobile device,  blocking the data owner’s access. 
+
+After the infection, the victim receives a message that tells him that a certain amount of money must be paid (usually in Bitcoins) to get the decryption key. Usually,  there is also a time limit for the ransom to be paid. The decryption key is not guaranteed to be handed over if the victim pays the ransom. The most reliable solution is to back up your data in at least three places (for redundancy) and keep those backups up to date, so you don’t lose important progress.
+
+Red Team
+A group authorises an adversary’s attack or an enterprise’s security posture.
+
+Redundancy
+Additional or alternative systems, sub-systems, assets, or processes that maintain a degree of overall functionality in case of loss or failure of another system, sub-system, asset, or process.
+
+Regulatory Compliance 
+The act of meeting legal, regulatory and industry requirements for security, privacy, resilience and reporting.
+
+Remote Access Trojan (RAT)
+Remote Access Trojans (RATs) use the victim’s access permissions and infect computers, giving cyber attackers unlimited access to the PC’s data.
+
+Cybercriminals can use RATs to exfiltrate confidential information. RATs include backdoors into the computer system and can enlist the PC into a botnet while spreading to other devices. Current RATs can bypass strong authentication and access sensitive applications,  which are later used to exfiltrate information to cybercriminal-controlled servers and websites.
+
+Risk Posture 
+An overall view of how exposed an organisation is to cyber risk, based on its controls, vulnerabilities, threats and business context. 
+
+Rootkit
+A set of software tools with administrator-level access privileges is installed on an information system designed to hide their presence,  maintain their access privileges and conceal their activities.
+
+ 
+
+S
+Secret Key
+A cryptographic key is used for both encryption and decryption,  enabling the operation of a symmetric key cryptography scheme.
+
+Security Automation information technology shouldd be used n place of manual processes for cyber incident response and management.
+Information and Event Management (SIEM) Software
+Monitor,  log,  provide and analyse security to support threat detection and incident response. Data is collected from various systems, correlated and analysed to identify signs of compromise.
+
+Security Operations (SecOps) 
+The team, processes and technologies responsible for monitoring, detecting, investigating and responding to cyber threats.
+
+Security Operations Center (SOC)
+A central unit within an organisation responsible for monitoring, assessing and defending the organisation’s information systems.
+
+Security Orchestration, Automation and Response (SOAR) 
+Technology that automates and coordinates security tasks across tools and teams using workflows and playbooks. It helps speed up response and reduce manual effort.
+
+Security Perimeter
+
+A well-defined boundary within which security controls are enforced.
+
+Security Policy
+A rule or set of rules that govern the acceptable use of an organisation’s information to a level of acceptable risk and the organisation’s protection of information assets.
+
+Secure Score 
+A Microsoft measurement that shows how well a Microsoft environment is configured against recommended security best practice. It is often used to identify gaps and prioritise improvement. 
+
+Single Sign-On (SSO)
+A software process allows an organisation’s users to use more than one application using a single set of credentials,  such as a username and password.
+
+Smishing
+Phishing via SMS: mass text messages sent to users asking for sensitive information (eg bank details) or encouraging them to visit a fake website.
+
+Social Engineering
+Manipulating people into carrying out specific actions or divulging information useful to an attacker. Manipulation tactics include lies,  psychological tricks,  bribes,  extortion,  impersonation and other types of threats. Social engineering is often used to extract data and gain unauthorised access to systems from single, private-use users or organisations using them..
+
+SaaS
+
+Describes a business model where organisations centrally host services over the Internet.
+
+Spam
+The abuse of electronic messaging systems to indiscriminately send unsolicited bulk messages.
+
+Spear Phishing
+Spear phishing is a cyberattack that aims to extract sensitive data from a victim using a specific and personalised email that looks like it’s from a person the recipient trusts.
+
+This message is usually sent to individuals or companies and is extremely effective because it’s well-planned. Attackers invest time and resources into gathering information about the victim (interests, activities, personal history,  etc.) to create the spear phishing message (usually an email). Spear phishing uses a sense of urgency and familiarity (which appears to come from someone you know) to manipulate the victim,  so the target doesn’t have time to double-check information.
+
+Spoofing
+Faking the sending address of a transmission to gain unauthorised access to a system.
+
+Spyware
+Spyware is malware designed to steal valuable information without the victim’s knowledge. Trojans, adware and system monitors are different types of spyware. Spyware monitors and stores the victim’s Internet activity (keystrokes, browser history, etc.) and can harvest usernames, passwords, financial information and more. It can also send this confidential data to servers that cybercriminals operate for use in subsequent cyberattacks.
+
+SQL Injection
+This is a tactic that uses code injection to attack data-driven applications. The maliciously injected SQL code can perform several actions, including dumping all the data in a database in a location controlled by the attacker. Through this attack, malicious hackers can spoof identities, modify or tamper with data, disclose confidential data, delete and destroy it, or make it unavailable. They can also take complete control of the database.
+
+SSL / Secure Sockets Layer
+SSL is an encryption method to ensure the safety of data sent and received from a user to a specific website and back. Encrypting this data transfer ensures that no one can snoop on the transmission and gain access to confidential information,  such as card details, in the case of online shopping. Legitimate websites use SSL (start with https). Users should avoid inputting their data on websites that don’t use SSL.
+
+Steganography
+A way of encrypting data,  hiding it within text or images, often for malicious intent.
+
+Symmetric Key
+A cryptographic key performs both the cryptographic operation and its inverse,  such as encrypting plaintext and decrypting ciphertext or creating a message authentication code and verifying the code.
+
+ 
+
+T
+Threat Analysis
+The detailed evaluation of the characteristics of individual threats.
+
+Threat Analytics 
+A way of analysing threats using intelligence, patterns and context to understand what matters most and what action should be taken.  
+
+Threat Assessment
+The product or process of identifying or evaluating entities,  actions,  or occurrences, whether natural or man-made,  that have or indicate the potential to harm life,  information,  operations and/or property.
+
+Threat Hunting
+Cyber threat hunting is the process of proactively searching networks and endpoints for threats that evade existing security controls.
+
+Threat Intelligence 
+Information about current or emerging threats that helps organisations understand attacker behaviour, identify risks and improve detection and response.
+
+Threat Intelligence Feed 
+A stream of threat data, such as malicious IPs, domains, file hashes or attacker indicators, used by security tools to help detect suspicious activity.
+
+Threat Management
+There is no silver bullet to prevent 100% of cyber threats. Successful threat management requires a multi-layered approach encompassing prevention, detection, response and recovery.
+
+Threat Monitoring
+During this process, security audits and other information in this category are gathered,  analysed and reviewed to see if certain events in the information system can be analysed to assess the system’s security. This is a continuous process.
+
+Ticket
+In access control, a ticket is data that authenticates the identity of a client or a service and, together with a temporary encryption key (a session key), forms a credential.
+
+Token
+In security, a token is a physical or electronic device to validate a user’s identity. Tokens are usually part of two-factor or multi-factor authentication mechanisms. They can also replace passwords in some cases and can be found as a key fob, a USB, an ID card or a smart card.
+
+Token Revocation 
+The act of invalidating a user’s active authentication tokens so they must sign in again. This is often used to stop suspicious or unauthorised access quickly. 
+
+Traffic Light Protocol
+To ensure that sensitive information is shared with the correct audience, a set of designations employing four colours (RED, AMBER, GREEN and WHITE)is used.
+
+Trojan Horse
+A computer program that appears to have a useful function, but also has a hidden and potentially malicious function that evades security mechanisms, sometimes by exploiting legitimate authorisations of a system entity that invokes the program.
+
+Two-Factor Authentication
+The use of two different components to verify a user’s claimed identity. Also known as multi-factor authentication.
+
+Typhoid Adware
+This cyber security threat employs a Man-in-the-middle attack to inject advertising into certain web pages a user visits while using a public network, like a public, non-encrypted WiFi hotspot. In this case, the computer doesn’t need adware,  so installing traditional antivirus software can’t counteract the threat. While the ads can be non-malicious, they can expose users to other threats. For example, the ads could promote a fake antivirus that is malware or a phishing attack.
+
+ 
+
+U
+Unauthorised Access
+Any access that violates the stated security policy.
+
+URL Injection
+A URL (or link) injection occurs when a cybercriminal creates new pages on a website owned by someone else that contain spam words or links. Sometimes, these pages also contain malicious code that redirects users to other web pages, causing the website’s web server to contribute to a DDoS attack. URL injection usually happens because of vulnerabilities in server directories or software used to operate the website, such as outdated WordPress or plugins.
+
+ 
+
+V
+Virtual Private Network (VPN)
+An encrypted network is often created to allow secure connections for remote users, for example, in an organisation with offices in multiple locations.
+
+Viruses cause an infection to spread and infect legitimate software programs through malware.
+Vulnerability
+A weakness, or flaw, in software, a system or a process. An attacker may seek to exploit a vulnerability to gain unauthorised access to a system.
+
+ 
+
+W
+Wabbits
+A wabbit is one of four main forms of clunauthorisedware, along with viruses, worms and Trojan horses. It’s a computer program that repeatedly replicates on the local system and can be programmed to have malicious side effects. A fork bomb is an example of a wabbit: a DoS attack against a computer that uses the fork function. A fork bomb quickly creates many processes, eventually crashing the system. Wabbits don’t attempt to spread to other computers across networks.
+
+Water-Holing (Watering Hole Attack)
+Setting up a fake website (or compromising a real one) to exploit visiting users.
+
+Watering Hole
+Watering hole is the name of a computer attack strategy detected as early as 2009 and 2010.
+
+The victim is a targeted group,  such as a company, organisation, industry,  etc. The attacker spends time gaining information about the target,  for example,  observing which group members visit legitimate websites more often. Then, the attacker exploits a vulnerability and infects one of those trusted websites with malware without the knowledge of the site’s owner.
+
+Eventually, someone from that organisation will fall into the trap and their computer will be infected,  giving the organisation access to the target network, constant vulnerabilities in website technologies,  even with the most popular systems, such as WordPress, making it easier to compromise websites without being noticed.
+
+Whaling
+Highly targeted phishing attacks (masquerading as a legitimate email) are aimed at senior executives.
+
+White Team
+A group responsible for refereeing an engagement between a Red Team of mock attackers and a Blue Team of actual defenders of information systems.
+
+Worm
+A self-replicating, self-propagating,  self-contained program that uses networking mechanisms to spread itself.
+
+ 
+
+Z
+Zero-Day
+Vendors and antivirus companies are not yet aware of recently discovered vulnerabilities (or bugs) that hackers can exploit.
+
+Zero Trust 
+A security model based on the principle of never trust, always verify. It assumes no user, device or application should be trusted automatically, even if it is already inside the network.
+
+Zero Trust Maturity 
+A measure of how far an organisation has progressed in adopting Zero Trust principles across identity, devices, applications, data and infrastructure.
+
+Zombie
+A zombie computer appears to be connected to the Internet and performs normally, but it can be controlled by a hacker with remote access who sends commands through an open port. Zombies are mostly used to perform malicious tasks, such as spreading spam or other infected data to other computers or launching DoS (Denial of Service) attacks, with the owner unaware of it.
