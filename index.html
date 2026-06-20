@@ -267,10 +267,11 @@ const nav = document.getElementById('nav');
 const search = document.getElementById('search');
 const foot = document.getElementById('foot');
 let entries = [];
+const SITE_VERSION = '0.1.5';
 
 if (window.GLOSSARY && window.GLOSSARY.entries) {
   entries = window.GLOSSARY.entries;
-  foot.textContent = `${entries.length} terms · updated ${window.GLOSSARY.generated || ''}`;
+  foot.textContent = `v${SITE_VERSION} · ${entries.length} terms · updated ${window.GLOSSARY.generated || ''}`;
   buildNav();
   render('');
 } else {
