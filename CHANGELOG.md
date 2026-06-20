@@ -23,6 +23,5 @@ Format follows Keep a Changelog; dates use ISO 8601 (YYYY-MM-DD).
 - Professional UI redesign: sticky A-Z rail, term cards, refined typography.
 
 ## 0.1.0 — 2026-06-20
-- Initial release: build_glossary.py converts th_data.txt into glossary.json / glossary-data.js.
+- Initial release: bilingual Thai–English cyber security glossary.
 - Single-page glossary with live search and A-Z navigation (180 terms).
-- Read data directly via glossary-data.js so index.html works by double-click (no web server).

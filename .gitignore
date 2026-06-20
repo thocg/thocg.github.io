@@ -1,5 +1,4 @@
-# ─── Build tooling (kept out of the public repo on request) ──────────
-# The local Python script that generates the *-data.js files.
+# ─── Local backend tooling (not uploaded to GitHub) ──────────────────
 build_glossary.py
 
 # ─── Python ──────────────────────────────────────────────────────────

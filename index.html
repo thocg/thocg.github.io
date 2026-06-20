@@ -242,7 +242,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
   else { root.setAttribute('data-theme', 'dark'); localStorage.setItem('tocg-theme', 'dark'); }
 });
 
-// Simple hash-based page switching (single file, no server).
+// Simple hash-based page switching.
 function route() {
   const page = location.hash.replace(/^#\/?/, '');
   const view = (page === 'about' || page === 'changelog') ? page : 'glossary';
@@ -275,8 +275,7 @@ if (window.GLOSSARY && window.GLOSSARY.entries) {
   buildNav();
   render('');
 } else {
-  list.innerHTML = '<p id="empty">โหลดข้อมูลไม่ได้ — ไม่พบ glossary-data.js ' +
-    '(รัน <code>python build_glossary.py</code> ก่อน)</p>';
+  list.innerHTML = '<p id="empty">โหลดข้อมูลไม่ได้ — ไม่พบ glossary-data.js</p>';
 }
 
 function buildNav() {
@@ -328,7 +327,7 @@ function renderChangelog() {
   const el = document.getElementById('changelog-body');
   const text = (window.CHANGELOG || '').replace(/\s+$/, '');
   if (!text) {
-    el.textContent = 'โหลด changelog ไม่ได้ — ไม่พบ changelog-data.js (รัน python build_glossary.py ก่อน)';
+    el.textContent = 'โหลด changelog ไม่ได้ — ไม่พบ changelog-data.js';
     return;
   }
   el.innerHTML = text.split('\n').map(line => {
